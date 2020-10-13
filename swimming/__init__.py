@@ -1,0 +1,1 @@
+from .animals import StingRay, Goldfish, Catfish, Otter, Shark
