@@ -15,7 +15,6 @@ class Llama():
     def __str__(self):
         return f"{self.name} is a {self.species}"
 
-kevin = Llama("Kevin", "domesticated Llama", "morning", "llama food")
 
 class Goat():
     def __init__(self, name, species, shift, food):
@@ -32,7 +31,6 @@ class Goat():
     def __str__(self):
         return f"{self.name} is a {self.species}"
 
-gary = Goat("Gary", "billy-goat", "mid-day", "goat food")
 
 class Horse():
     def __init__(self, name, species, shift, food):
@@ -49,7 +47,6 @@ class Horse():
     def __str__(self):
         return f"{self.name} is a {self.species}"
 
-chester = Horse("Chester", "stallion", "afternoon", "hay")
 
 class Pig():
     def __init__(self, name, species, shift, food):
@@ -66,7 +63,6 @@ class Pig():
     def __str__(self):
         return f"{self.name} is a {self.species}"
 
-oinky = Pig("Oinky", "pot-belly", "morning", "oats")
 
 class Cow():
     def __init__(self, name, species, shift, food):
@@ -83,4 +79,3 @@ class Cow():
     def __str__(self):
         return f"{self.name} is a {self.species}"
 
-bessy = Cow("Bessy", "milking cow", "afternoon", "grass")

@@ -15,7 +15,6 @@ class StingRay():
     def __str__(self):
         return f"{self.name} is a {self.species}"
 
-ray = StingRay("Ray", "stingray", "ray food")
 
 class Goldfish():
     def __init__(self, unique_id, name, species, food):
@@ -32,7 +31,6 @@ class Goldfish():
     def __str__(self):
         return f"{self.name} is a {self.species}"
 
-nemo = Goldfish("Nemo", "goldfish", "fish food")
 
 class Catfish():
     def __init__(self, unique_id, name, species, food):
@@ -49,7 +47,6 @@ class Catfish():
     def __str__(self):
         return f"{self.name} is a {self.species}"
 
-feline = Catfish("Feline", "catfish", "worms")
 
 class Otter():
     def __init__(self, unique_id, name, species, food):
@@ -66,7 +63,6 @@ class Otter():
     def __str__(self):
         return f"{self.name} is a {self.species}"
 
-tubs = Otter("Tubs", "otter", "small fish")
 
 class Shark():
     def __init__(self, unique_id, name, species, food):
@@ -83,4 +79,3 @@ class Shark():
     def __str__(self):
         return f"{self.name} is a {self.species}"
 
-bruce = Shark("Bruce", "Great White Shark", "small fish")

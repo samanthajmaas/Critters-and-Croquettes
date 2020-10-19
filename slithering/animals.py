@@ -14,13 +14,17 @@ class Python():
     def chip_num(self):
         return self.__chip_number
 
+    @chip_num.setter 
+        def chip_num(self, number):
+            pass
+
     def feed(self):
       print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
 
     def __str__(self):
         return f"{self.name} is a {self.species}"
 
-silk = Python("Silk", "python", "mouse")
+
 
 class Crocodile():
     def __init__(self, unique_id, name, species, food):
@@ -37,7 +41,7 @@ class Crocodile():
     def __str__(self):
         return f"{self.name} is a {self.species}"
 
-jaws = Crocodile("Jaws", "crocodile", "rat")
+
 
 class Salamander():
     def __init__(self, unique_id, name, species, food):
@@ -54,7 +58,7 @@ class Salamander():
     def __str__(self):
         return f"{self.name} is a {self.species}"
 
-sammy = Salamander("Sammy", "salamander", "lizard food")
+
 
 class Anaconda():
     def __init__(self, unique_id, name, species, food):
@@ -71,7 +75,7 @@ class Anaconda():
     def __str__(self):
         return f"{self.name} is a {self.species}"
 
-nicki = Anaconda("Nicki", "anaconda", "rat")
+
 
 class Gecko():
     def __init__(self, unique_id, name, species, food):
@@ -88,4 +92,3 @@ class Gecko():
     def __str__(self):
         return f"{self.name} is a {self.species}"
 
-geiko = Gecko("Geiko", "gecko", "lizard food")
