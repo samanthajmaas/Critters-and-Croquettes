@@ -1,8 +1,7 @@
 from datetime import date
 
 class Llama():
-    def __init__(self, unique_id, name, species, shift, food):
-        self.id = unique_id
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.shift = shift
@@ -19,8 +18,7 @@ class Llama():
 kevin = Llama("Kevin", "domesticated Llama", "morning", "llama food")
 
 class Goat():
-    def __init__(self, unique_id, name, species, shift, food):
-        self.id = unique_id
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.shift = shift
@@ -37,8 +35,7 @@ class Goat():
 gary = Goat("Gary", "billy-goat", "mid-day", "goat food")
 
 class Horse():
-    def __init__(self, unique_id, name, species, shift, food):
-        self.id = unique_id
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.shift = shift
@@ -55,8 +52,7 @@ class Horse():
 chester = Horse("Chester", "stallion", "afternoon", "hay")
 
 class Pig():
-    def __init__(self, unique_id, name, species, shift, food):
-        self.id = unique_id
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.shift = shift
@@ -73,8 +69,7 @@ class Pig():
 oinky = Pig("Oinky", "pot-belly", "morning", "oats")
 
 class Cow():
-    def __init__(self, unique_id, name, species, shift, food):
-        self.id = unique_id
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.shift = shift

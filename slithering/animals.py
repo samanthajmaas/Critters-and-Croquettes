@@ -1,13 +1,18 @@
 from datetime import date
 
 class Python():
-    def __init__(self, unique_id, name, species, food):
+    def __init__(self, unique_id, name, species, food, chip_num):
         self.id = unique_id
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.slithering = True
         self.food = food
+        self.__chip_number = chip_num
+    
+    @property
+    def chip_num(self):
+        return self.__chip_number
 
     def feed(self):
       print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
