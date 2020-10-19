@@ -1,51 +1,43 @@
 from datetime import date
 
+class SwimmingAnimal:
+    def __init__(self, name, species, food):
+      self.name = name
+          self.species = species
+          self.shift = shift
+          self.date_added = date.today()
+          self.food = food
+
+    def feed(self):
+      print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
 class StingRay():
-    def __init__(self, unique_id, name, species):
-        self.id = unique_id
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+    def __init__(self, name, species, shift, food):
+        super().__init__(name, species, shift, food)
         self.swimming = True
 
-ray = StingRay("Ray", "stingray")
 
 class Goldfish():
-    def __init__(self, unique_id, name, species):
-        self.id = unique_id
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+    def __init__(self, name, species, shift, food):
+        super().__init__(name, species, shift, food)
         self.swimming = True
-
-nemo = Goldfish("Nemo", "goldfish")
 
 class Catfish():
-    def __init__(self, unique_id, name, species):
-        self.id = unique_id
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+    def __init__(self, name, species, shift, food):
+        super().__init__(name, species, shift, food)
         self.swimming = True
 
-feline = Catfish("Feline", "catfish")
 
 class Otter():
-    def __init__(self, unique_id, name, species):
-        self.id = unique_id
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+    def __init__(self, name, species, shift, food):
+        super().__init__(name, species, shift, food)
         self.swimming = True
 
-tubs = Otter("Tubs", "otter")
 
 class Shark():
-    def __init__(self, unique_id, name, species):
-        self.id = unique_id
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+    def __init__(self, name, species, shift, food):
+        super().__init__(name, species, shift, food)
         self.swimming = True
-
-bruce = Shark("Bruce", "Great White Shark")

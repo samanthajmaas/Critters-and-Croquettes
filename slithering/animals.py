@@ -1,51 +1,61 @@
 from datetime import date
 
-class Python():
-    def __init__(self, unique_id, name, species):
-        self.id = unique_id
+class SlithingAnimal:
+    def __init__(self, name, species, food, chip_num):
         self.name = name
         self.species = species
+        self.shift = shift
         self.date_added = date.today()
+        self.food = food
+        self.__chip_number = chip_num
+        
+    @property
+    def chip_num(self):
+        return self.__chip_number
+
+    @chip_num.setter 
+        def chip_num(self, number):
+            pass
+
+    def feed(self):
+      print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+
+
+class Python():
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.slithering = True
 
-silk = Python("Silk", "python")
 
 class Crocodile():
-    def __init__(self, unique_id, name, species):
-        self.id = unique_id
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.slithering = True
 
-jaws = Crocodile("Jaws", "crocodile")
+
 
 class Salamander():
-    def __init__(self, unique_id, name, species):
-        self.id = unique_id
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.slithering = True
 
-sammy = Salamander("Sammy", "salamander")
+    def feed(self):
+        print(f'{self.name} had to be in the water to eat its {self.food}')
+
+
 
 class Anaconda():
-    def __init__(self, unique_id, name, species):
-        self.id = unique_id
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.slithering = True
 
-nicki = Anaconda("Nicki", "anaconda")
 
 class Gecko():
-    def __init__(self, unique_id, name, species):
-        self.id = unique_id
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.slithering = True
 
-geiko = Gecko("Geiko", "gecko")
