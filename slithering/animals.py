@@ -1,15 +1,14 @@
 from datetime import date
 
-class Python():
-    def __init__(self, unique_id, name, species, food, chip_num):
-        self.id = unique_id
+class SlithingAnimal:
+    def __init__(self, name, species, food, chip_num):
         self.name = name
         self.species = species
+        self.shift = shift
         self.date_added = date.today()
-        self.slithering = True
         self.food = food
         self.__chip_number = chip_num
-    
+        
     @property
     def chip_num(self):
         return self.__chip_number
@@ -26,69 +25,37 @@ class Python():
 
 
 
-class Crocodile():
-    def __init__(self, unique_id, name, species, food):
-        self.id = unique_id
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Python():
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.slithering = True
-        self.food = food
 
-    def feed(self):
-      print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
 
-    def __str__(self):
-        return f"{self.name} is a {self.species}"
+class Crocodile():
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
+        self.slithering = True
 
 
 
 class Salamander():
-    def __init__(self, unique_id, name, species, food):
-        self.id = unique_id
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.slithering = True
-        self.food = food
 
     def feed(self):
-      print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-
-    def __str__(self):
-        return f"{self.name} is a {self.species}"
+        print(f'{self.name} had to be in the water to eat its {self.food}')
 
 
 
 class Anaconda():
-    def __init__(self, unique_id, name, species, food):
-        self.id = unique_id
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.slithering = True
-        self.food = food
-
-    def feed(self):
-      print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-
-    def __str__(self):
-        return f"{self.name} is a {self.species}"
-
 
 
 class Gecko():
-    def __init__(self, unique_id, name, species, food):
-        self.id = unique_id
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.slithering = True
-        self.food = food
-
-    def feed(self):
-      print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-
-    def __str__(self):
-        return f"{self.name} is a {self.species}"
 
