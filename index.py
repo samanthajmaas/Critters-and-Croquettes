@@ -1,7 +1,5 @@
-from .slithering import Python, Crocodile, Salamander, Anaconda, Gecko
-from .swimming import StingRay, Goldfish, Catfish, Otter, Shark
-from .walking import Llama, Goat, Horse, Pig, Cow
-from .attractions import PettingZoo, SnakePit, Wetlands
+from . attractions import PettingZoo, Wetlands, SnakePit
+from animals import Goose, Python, Crocodile, Salamander, Anaconda, Gecko, StingRay, Goldfish, Catfish, Otter, Shark, Llama, Goat, Horse, Pig, Cow
 
 silk = Python("Silk", "python", "mouse")
 jaws = Crocodile("Jaws", "crocodile", "rat")
@@ -20,6 +18,9 @@ gary = Goat("Gary", "billy-goat", "mid-day", "goat food")
 chester = Horse("Chester", "stallion", "afternoon", "hay")
 oinky = Pig("Oinky", "pot-belly", "morning", "oats")
 bessy = Cow("Bessy", "milking cow", "afternoon", "grass")
+bob = Goose("Bob", "Canada goose", "watercress sandwiches")
+bob.run()
+bob.swim()
 
 
 varmit_village = PettingZoo("Varmit Village")

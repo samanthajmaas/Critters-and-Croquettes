@@ -14,3 +14,4 @@ from .crocodile import Crocodile
 from .salamander import Salamander
 from .anaconda import Anaconda
 from .gecko import Gecko
+from .goose import Goose
